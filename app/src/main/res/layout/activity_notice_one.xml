@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoticeOne">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOTICE 478/सूचना 478"
+                android:textAlignment="center"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"
+                android:textSize="25dp"
+                ></TextView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="जा.क्र. बीपी/प्र.क्र"></TextView>
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_marginLeft="14dp"
+                    android:id="@+id/t1"
+                    android:textAlignment="center"
+                    android:layout_marginRight="10dp"
+                    android:text="जा.क्र. बीपी / ? / प्र.क्र. ? / ? / २०२०"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="दिनांक -"></TextView>
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_marginLeft="68dp"
+                    android:id="@+id/t2"
+                    android:layout_marginRight="10dp"
+                    android:hint="दिनांक"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="श्री. -"></TextView>
+
+            <Spinner
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="78dp"
+                android:id="@+id/t3"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:hint="पत्ता"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/rounded_border_edittext"></Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="नाव - "></TextView>
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_marginLeft="78dp"
+                    android:id="@+id/t21"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="नाव"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="पत्ता - "></TextView>
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_marginLeft="78dp"
+                    android:id="@+id/t4"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="पत्ता"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="गाव -"></TextView>
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_marginLeft="82dp"
+                    android:id="@+id/t5"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="गाव"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="मोजे -"></TextView>
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_marginLeft="80dp"
+                    android:id="@+id/t6"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="मोजे"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="ता. -"></TextView>
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_marginLeft="86dp"
+                    android:id="@+id/t7"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="ता."
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="ठिकाण -"></TextView>
+
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_marginLeft="66dp"
+                    android:id="@+id/t8"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="ठिकाण"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="स.नं./सि.टी.स.नं./गट नं.-"></TextView>
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_marginLeft="14dp"
+                    android:id="@+id/t9"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="स.नं./सि.टी.स.नं./गट नं."
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="10dp"
+                    android:text="बांधकामाचे मोजमाप – अंदाजे -"></TextView>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="25dp">
+
+                    <EditText
+                        android:layout_width="160dp"
+                        android:layout_marginLeft="14dp"
+                        android:id="@+id/t10"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:hint="मी."
+                        android:inputType="number"
+                        android:layout_marginBottom="15dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:layout_height="50dp"></EditText>
+                    <EditText
+                        android:layout_width="160dp"
+                        android:layout_marginLeft="14dp"
+                        android:id="@+id/t11"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:hint="मी"
+                        android:layout_marginBottom="15dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:layout_height="50dp"></EditText>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="25dp">
+
+                    <EditText
+                        android:layout_width="160dp"
+                        android:layout_marginLeft="14dp"
+                        android:id="@+id/t12"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:hint="मजले"
+                        android:layout_marginBottom="15dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:layout_height="50dp"></EditText>
+                    <EditText
+                        android:layout_width="160dp"
+                        android:layout_marginLeft="14dp"
+                        android:id="@+id/t13"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:hint="चौ.मी."
+
+                        android:layout_marginBottom="15dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/rounded_border_edittext"
+                        android:layout_height="50dp"
+                       ></EditText>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="बांधकामाचा प्रकार -"></TextView>
+
+                <Spinner
+                    android:layout_width="230dp"
+                    android:layout_marginLeft="38dp"
+
+                    android:id="@+id/t14"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="बांधकामाचा प्रकार"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:text="सूचना पोहोचविल्यापासून -"></TextView>
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="14dp"
+                    android:id="@+id/days1"
+                    android:textAlignment="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+
+                <Spinner
+                    android:layout_width="160dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/days2"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="पूर्वेस -"></TextView>
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_marginLeft="104dp"
+                    android:id="@+id/t15"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="पूर्वेस"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="पश्चिमेस -"></TextView>
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_marginLeft="90dp"
+                    android:id="@+id/t16"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="पश्चिमेस"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="दक्षिणेस -"></TextView>
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_marginLeft="90dp"
+                    android:id="@+id/t17"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="दक्षिणेस"
+                    android:layout_marginBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="उत्तरेस -"></TextView>
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_marginLeft="96dp"
+                    android:id="@+id/t18"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="उत्तरेस "
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="क्षेत्रिय कार्यालय -"></TextView>
+
+                <Spinner
+                    android:layout_width="230dp"
+                    android:layout_marginLeft="52dp"
+                    android:id="@+id/t19"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_height="wrap_content"
+                    android:text="पिन कोड -"></TextView>
+
+                <EditText
+                    android:layout_width="230dp"
+                    android:layout_marginLeft="86dp"
+                    android:id="@+id/t20"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:hint="पिन कोड"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="50dp"></EditText>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/holo_green_dark"></TextView>
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                >
+
+                <Button
+                    android:id="@+id/capture1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="62dp"
+                    android:layout_y="33dp"
+                    android:text="Capture"></Button>
+
+                <Button
+                    android:id="@+id/capture2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_x="248dp"
+                    android:layout_y="35dp"
+                    android:text="Capture"></Button>
+
+                <Button
+                    android:id="@+id/capture3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="71dp"
+                    android:layout_y="290dp"
+                    android:text="Capture"></Button>
+
+                <Button
+                    android:id="@+id/capture4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="248dp"
+                    android:layout_y="288dp"
+                    android:text="Capture"></Button>
+
+
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_x="34dp"
+                    android:layout_y="100dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+
+                    android:layout_marginTop="10dp"
+
+                    android:layout_x="221dp"
+                    android:layout_y="99dp"></ImageView>
+
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_x="37dp"
+                    android:layout_y="366dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_x="224dp"
+                    android:layout_y="364dp"></ImageView>
+
+            </AbsoluteLayout>
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@android:color/holo_green_dark"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Submit"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_marginRight="30dp"
+                    android:text="Submit"
+                    ></Button>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:id="@+id/back1"
+                    android:text="Back"></Button>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

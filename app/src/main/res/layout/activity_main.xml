@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_marginTop="100dp"
+       android:layout_height="100dp"
+       android:padding="10dp"
+       android:src="@drawable/user"
+       android:id="@+id/img"
+       ></ImageView>
+
+
+   <EditText
+       android:layout_width="300dp"
+       android:layout_below="@+id/img"
+       android:layout_height="wrap_content"
+       android:hint="वापरकर्तानाव/Username"
+       android:layout_centerHorizontal="true"
+       android:textAlignment="center"
+       android:id="@+id/username"
+       ></EditText>
+
+
+   <EditText
+       android:password="true"
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:hint="गुप्तशब्द/Password"
+       android:layout_below="@+id/username"
+      android:textAlignment="center"
+       android:id="@+id/password"
+      android:layout_centerHorizontal="true">
+   </EditText>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="लॉगिन/Login"
+       android:id="@+id/login"
+      android:layout_below="@id/password"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"></Button>
+
+
+   <Button
+       android:layout_width="wrap_content"
+       android:id="@+id/storageR"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="190dp"
+       android:layout_height="wrap_content"
+      android:text="Please grant STORAGE_PERMISSION"
+       android:layout_below="@+id/login"
+       android:onClick="storage"
+       ></Button>
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/storageR"
+       android:text="Please grant CAMERA_PERMISSION"
+       android:onClick="camera"
+       ></Button>
+
+</RelativeLayout>
